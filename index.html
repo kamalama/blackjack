@@ -1,3 +1,4 @@
+<html>
   <head>
     <title>Blackjack</title>
     <link href="styles/app.css" rel="stylesheet" type="text/css" media="screen">
@@ -5,8 +6,21 @@
   <body>
     <script src="lib/jquery.js"></script>
     <script src="lib/underscore.js"></script>
+    <script src="lib/handlebars-v1.1.2.js"></script>
     <script src="lib/backbone.js"></script>
-
+    <script id="hand-template" type="text/x-handlebars-template">
+      <h2> {{#if isDealer}} Dealer {{else}} You {{/if}} ({{checkScore}}) </h2>
+    </script>
+    <script id="card-template" type="text/x-handlebars-template">
+      <div class="card doctor{{rank}} {{#unless revealed}} covered {{/unless}}">
+        {{ rankName }} of {{ suitName }}
+      </div>
+    </script>
+    <script id="app-template" type="text/x-handlebars-template">
+      <button class="hit-button">Hit</button> <button class="stand-button">Stand</button>
+      <div class="dealer-hand-container"></div>
+      <div class="player-hand-container"></div>
+    </script>
     <script src="compiled/app/models/Card.js"></script>
     <script src="compiled/app/models/Hand.js"></script>
     <script src="compiled/app/models/Deck.js"></script>

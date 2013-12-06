@@ -1,16 +1,163 @@
+html { 
+  background: url(img/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 .card {
-  float: left;
+  display: inline-block;
+  float: center;
   border: solid 1px black;
   width: 100px;
   border-radius: 5px;
   height: 140px;
-  margin-right: 20px;
+  text-align: center;
+  margin: 5px;
+  vertical-align:top;
+  background-color:black;
 }
 
-.covered {
-  background-color: black;
+.app {
+  position:relative;
+  width: 50%;
+  height:50%;
+  /*background-image: url(img/background.png);*/
+  background-image: url(img/FLOATINGtardis.gif);
+  background-size: 100% 100%;
+  border-style: double;
+  padding: 16px;
+  background-color: #DCDCED;
+  border-radius: 10px;
+}
+.hit-button{
+  position: absolute;
+  bottom:0px;
+  left: 150px;
+  width: 100px;
+  height: 35px;
+  background: #4162a8;
+  border-top: 1px solid #38538c;
+  border-right: 1px solid #1f2d4d;
+  border-bottom: 1px solid #151e33;
+  border-left: 1px solid #1f2d4d;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+  box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+  color: #fff;
+  font: bold 20px/1 "helvetica neue", helvetica, arial, sans-serif;
+  margin-bottom: 10px;
+  padding: 5px 0 12px 0;
+  text-align: center;
+  text-shadow: 0 -1px 1px #1e2d4d;
+  -webkit-background-clip: padding-box;
+}
+.stand-button{
+  position: absolute;
+  bottom:0px;
+  right:150px;
+  width: 100px;
+  height: 35px;
+  background: #4162a8;
+  border-top: 1px solid #38538c;
+  border-right: 1px solid #1f2d4d;
+  border-bottom: 1px solid #151e33;
+  border-left: 1px solid #1f2d4d;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+  box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+  color: #fff;
+  font: bold 20px/1 "helvetica neue", helvetica, arial, sans-serif;
+  margin-bottom: 10px;
+  padding: 5px 0 12px 0;
+  text-align: center;
+  text-shadow: 0 -1px 1px #1e2d4d;
+  -webkit-background-clip: padding-box;
+
 }
 
 .hand {
+  right:200;
+  left:200;
   overflow: auto;
+  text-align: center;
+}
+
+.doctor1 {
+  background-image: url('img/1-doctor.jpg');
+  background-size: 100% 100%;
+
+}
+
+.doctor2 {
+  background-image: url('img/2-doctor.jpg');
+  background-size: 100% 100%;
+  
+}
+
+.doctor3 {
+  background-image: url('img/3-doctor.jpg');
+  background-size: 100% 100%;
+}
+
+.doctor4 {
+  background-image: url('img/4-doctor.jpg');
+  background-size: 100% 100%;
+}
+
+.doctor5 {
+  background-image: url('img/5-doctor.jpg');
+  background-size: 100% 100%;
+}
+
+.doctor6 {
+  background-image: url('img/6-doctor.jpg');
+  background-size: 100% 100%;
+}
+.doctor7 {
+  background-image: url('img/7-doctor.jpg');
+  background-size: 100% 100%;
+}
+
+.doctor8 {
+  background-image: url('img/8-doctor.jpg');
+  background-size: 100% 100%;
+}
+
+.doctor9 {
+  background-image: url('img/9-doctor.jpg');
+  background-size: 100% 100%;
+}
+
+.doctor10 {
+  background-image: url('img/10-doctor.jpg');
+  background-size: 100% 100%;
+}
+
+.doctor11 {
+  background-image: url('img/11-doctor.jpg');
+  background-size: 100% 100%;
+}
+
+.doctor12 {
+  background-image: url('img/12-doctor.jpg');
+  background-size: 100% 100%;
+}
+
+.doctor0 {
+  background-image: url('img/0-doctor.jpg');
+  background-size: 100% 100%;
+}
+
+.covered {
+  color: rgba(0,0,0,1);
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url('img/tardis.jpg');
+  background-size: 100% 100%;
 }
